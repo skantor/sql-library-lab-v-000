@@ -1,5 +1,5 @@
 def select_books_titles_and_years_in_first_series_order_by_year
-  "Write your SQL query here"
+  "SELECT Books.title, Books.year FROM Books LEFT JOIN Series on Books.title = Series.title ORDER BY Books.year"
 end
 
 def select_name_and_motto_of_char_with_longest_motto
@@ -8,11 +8,11 @@ end
 
 
 def select_value_and_count_of_most_prolific_species
-  "Write your SQL query here"
+  "SELECT species, COUNT(species) WHERE ;"
 end
 
 def select_name_and_series_subgenres_of_authors
-  "Write your SQL query here"
+  "select name, subgenres FROM author WHERE;"
 end
 
 def select_series_title_with_most_human_characters
